@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/splash.css">
+    <title>EDU Sphere</title>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./Pictures/splash/vid.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div id="Edusplash-wrapper">
+        <div id="Edulogo-wrapper"><img id="Edulogo" src="./Pictures/splash/edus.png" alt="Web-site logo"></div>
+        <div class="Eduline"></div>
+        <div id="Edumission-wrapper">
+            <div id="Edumission"> All students receive an inclusive and equitable quality education.</div>
+        </div>
+        <div id="Edustudent-wrapper">
+            <div class="Edustudents">Senuth Damjaya</div>
+            <div class="Edustudent-line"></div>
+            <div class="Edustudents">Nisal Rukshan</div>
+            <div class="Edustudents">Sivananthan Anushigan </div>
+            <div class="Edustudent-line"></div>
+            <div class="Edustudents">Thisuka Madurawalage</div>
+        </div>
+        <div class="Eduline"></div>
+        <div id="Eduloading-wrapper"><img id="Eduloading" src="./Pictures/splash/load.gif" alt="Background image"><h1 style="margin-top: 35px;">Please wait...</h1></div>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.getElementById('Edusplash-wrapper').classList.add('loaded');
+        }, 500);
+        setTimeout(() => {
+            window.location.href = "./HTML/home.html";
+        }, 4000);
+    </script>
+</body>
+</html>

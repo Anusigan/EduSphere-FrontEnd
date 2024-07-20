@@ -1,0 +1,190 @@
+/*Custom body styles*/
+html, body {
+    min-height: 100%;  /* Ensure the body takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;  /* Arrange flex items in a column */
+}
+
+/*Main container styles*/
+main {
+    flex: 1;  /*Allow main to grow and fill available space */
+    display: flex;
+    flex-direction: column;  /*Arrange flex items in a column */
+}
+
+/*Profile container styles */
+.profile-container {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow */
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;  /*Center the container horizontally and add vertical margin */
+    margin-top: 100px;  /*Add top margin to space it from the header */
+}
+
+/*Header styles*/
+h1 {
+    margin-bottom: 20px;
+    color: #116a99;
+}
+
+/*Progress bar container styles*/
+.progress-container {
+    margin-top: 20px;
+}
+
+#progress-label {
+    margin-bottom: 5px;
+}
+
+/*Progress bar styles */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #0496ff;
+    height: 20px;
+    width: 0;  /* Initial width of the progress bar */
+    transition: width 0.3s;  /* Smooth transition for width changes */
+}
+
+/*Prompt container styles*/
+.prompt {
+    margin: 15px 0;  /* Add vertical margin */
+    text-align: left;  /* Left align text inside the prompt */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Input field styles within prompts */
+.prompt-input {
+    display: block;  /* Make input a block element */
+    width: calc(100% - 20px);  /* Full width minus padding */
+    margin: 10px auto;  /* Center the input horizontally and add vertical margin */
+    padding: 10px;
+    border: 1px solid #ccc;  /* Set border color and width */
+    border-radius: 5px;
+    transition: border-color 0.3s;  /*Smooth border color transition*/
+}
+
+.prompt-input:focus {
+    border-color: #116a99;  /*Change border color on focus */
+}
+
+/*Button styles */
+button {
+    padding: 10px 20px;  /* Add padding inside the button */
+    margin: 5px;
+    border: none;  /* Remove default border */
+    border-radius: 5px;
+    cursor: pointer;  /* Change cursor to pointer */
+    transition: background-color 0.3s;  /*Smooth background color transition */
+}
+
+/*Next and finish button styles*/
+.next-btn, .finish-btn {
+    background-color: #116a99;
+    color: white;
+}
+
+.next-btn:hover, .finish-btn:hover {
+    background-color: #0f5378;  /*Darker color on hover*/
+}
+
+/*Previous button styles*/
+.prev-btn {
+    background-color: #7a9e9f;
+    color: white;
+}
+
+.prev-btn:hover {
+    background-color: #698e8f;  /*Darker color on hover*/
+}
+
+/*Skip button styles*/
+.skip-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.skip-btn:hover {
+    background-color: #d32f2f;  /*Darker color on hover*/
+}
+
+/*Profile output section styles */
+.profile-output {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 20px;
+    width: calc(100% - 40px);  /* Full width minus padding */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#output-content {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Modal styles */
+.modal {
+    position: fixed;  /* Fixed position for the modal */
+    top: 0;  /* Align to the top of the viewport */
+    left: 0;  /* Align to the left of the viewport */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+    display: flex;
+    justify-content: center;  /* Center align horizontally */
+    align-items: center;  /* Center align vertically */
+}
+
+/*Modal content styles*/
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Confirm and back button styles*/
+#confirm-btn, #back-btn {
+    padding: 10px 20px;  /* Add padding inside the buttons */
+    margin: 5px;
+    border: none;  /* Remove default border */
+    border-radius: 5px;
+    cursor: pointer;  /* Change cursor to pointer */
+}
+
+/*Confirm button styles*/
+#confirm-btn {
+    background-color: #116a99;
+    color: white;
+}
+
+#confirm-btn:hover {
+    background-color: #0f5378;  /*Darker color on hover*/
+}
+
+/*Back button styles */
+#back-btn {
+    background-color: #7a9e9f;
+    color: white;
+}
+
+#back-btn:hover {
+    background-color: #698e8f;  /*Darker color on hover */
+}

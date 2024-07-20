@@ -1,0 +1,171 @@
+.background {
+    min-height: 100vh; /* Ensure the background takes up the full viewport height */
+    background-image: url('../Pictures/feedback/feedback_background.jpg'); /* Add your background image here */
+    background-size: cover;/* Ensure the background image covers the entire element */
+    background-position: center;/* Center the background image */
+    background-repeat: no-repeat;/* Prevent the background image from repeating */
+    background-attachment: fixed; /* Ensure the background stays fixed when scrolling */
+    display: flex; /* Enable flexbox layout for the background */
+    flex-direction: column; /* Arrange children in a column layout */
+}
+
+.fcontent {
+    width: 100%; /* Make the container take up the full width */
+    max-width: 600px;/* Limit the maximum width of the container */
+    margin: 50px auto;/* Center the container and add top and bottom margin */
+    margin-top: 10%; /* Add top margin */
+    padding: 20px;
+    background-color: #dbd6d6c4; /* Set the background color with some transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);/* Add shadow for depth */
+    border-radius: 8px;/* Round the corners */
+}
+
+form {
+    width: 100%;/* Make the form take up the full width of its container */
+    padding: 20px;/* Add padding inside the form */
+    background-color: #dbd6d6c4;/* Set the background color with some transparency */
+    border-radius: 8px; /* Round the corners */
+    box-sizing: border-box;/* Ensure padding and border are included in the element's total width and height */
+}
+
+h1,h2 {
+    text-align: center;/* Center the headings */
+    margin-top: 7%;/* Add top margin */
+    margin-bottom: 10%;/* Add bottom margin */
+}
+
+label {
+    display: block; /* Make the label a block element */
+    margin: 20px 0 5px;/* Add top and bottom margin */
+    font-weight: bold;/* Make the label text bold */
+}
+
+select, input[type="text"], input[type="email"], input[type="radio"], textarea, button {
+    width: 100%; /* Make the elements take up the full width */
+    padding: 10px; /* Add padding inside the elements */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;/* Add a border */
+    border-radius: 4px;/* Round the corners */
+}
+
+input[type="number"]{
+    width: 70px;/* Set the width for number input */
+    padding: 10px;/* Add padding inside the input */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;/* Add a border */
+    border-radius: 4px;/* Round the corners */
+}
+
+.age{
+    display: inline-flex;/* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    margin-top: 18px;/* Add top margin */
+}
+
+.age label {
+    margin-top: -3px;
+    margin-right: 10px;
+    margin-bottom: 0; /* Remove bottom margin to align properly */
+}
+
+input[type="radio"] {
+    width: auto;/* Adjust width to fit content */
+    margin-right: 10px;/* Set placeholder text color */
+}
+
+input[type="text"]::placeholder, textarea::placeholder {
+    font-style: italic;
+    color: #9999997e;
+}
+
+input[type="radio"] + label {
+    display: inline-block;/* Make the label inline-block */
+    font-weight: normal; /* Set label text weight to normal */
+}
+
+textarea {
+    height: 100px;/* Set the height of the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    width: 100px; /* Set the desired width */
+    background-color: #116a99;/* Set the background color */
+    color: #fff;/* Set the text color to white */
+    border: none;/* Remove border */
+    border-radius: 5px;/* Round the corners */
+    cursor: pointer;/* Change cursor to pointer on hover */
+    text-align: center; /* Align text to the left */
+}
+
+button:hover {
+    background-color: #0f5378;/* Change background color on hover */
+}
+
+.popup {  /* Popup styles */
+    display: none; /* Hidden by default */
+    position: fixed;/* Fix the popup position */
+    z-index: 1000; /* Ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;/* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black background with transparency */
+}
+
+.popup-content {
+    position: absolute;/* Absolute positioning */
+    top: 50%;/* Center vertically */
+    left: 50%;/* Center horizontally */
+    transform: translate(-50%, -50%);/* Center the element */
+    padding: 20px;
+    text-align: center;/* Center align text */
+    background-color: #dbd6d67c;/* Set background color with transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);/* Add shadow */
+    border-radius: 8px;/* Round the corners */
+}
+
+.popup-content button {
+    margin-top: 20px;
+    background-color: #116a99;/* Set button background color */
+    color: white;/* Set button text color */
+    border: none;/* Remove border */
+    padding: 10px 20px;
+    cursor: pointer;/* Change cursor to pointer on hover */
+}
+
+.popup-content button:hover {
+    background-color: #0f5378;/* Change background color on hover */
+}
+
+.preview-section {
+    display: none;/* Hide the preview section by default */
+    width: 100%;/* Full width */
+    max-width: 600px;/* Set maximum width */
+    margin: 50px auto;/* Center align and add top and bottom margin */
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #dbd6d6ec;/* Set background color with some transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747); /* Add shadow */
+    border-radius: 8px;/* Round the corners */
+    overflow-x: hidden;/* Hide horizontal overflow */
+    word-wrap: break-word; /* Allows long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Ensures the overflow content breaks to the next line */
+    white-space: normal; /* Normal handling of white space */
+    margin-bottom: 7%;
+}
+
+.popup {
+    display: none; /* Hide the popup by default */
+    position: fixed;/* Fix the popup position */
+    left: 50%;/* Center horizontally */
+    top: 50%;/* Center vertically */
+    transform: translate(-50%, -50%);/* Center the element */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border */
+    background-color: white;/* Set background color to white */
+}
+
+.popup-content {
+    text-align: center;/* Center align text */
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header section-->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="../HTML/home.html"><img src="../Pictures/common/Logo.png" alt="Logo" class="nav-logo"></a>
+            </div>
+            <ul>
+                <li class="na"><a href="../HTML/home.html">Home</a></li>
+                <li class="na"><a href="../HTML/shop.html">Shop</a></li>
+                <li class="na"><a href="../HTML/gallery.html">Gallery</a></li>
+                <li class="na"><a href="../HTML/sitemap.html">Site Map</a></li>
+                <li class="na"><a href="../HTML/team.html">Team</a></li>
+                <li class="na"><a href="../HTML/feedback.html">Feedback</a></li>
+                <li id="active-tab"><a href="../HTML/profile.html">User Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <main>
+        <div class="profile-container" id="profile-container">
+            <h1>User Profile</h1>
+            <p>Build your academic profile by sharing your personal and educational details.</p>
+            <p>Enhance your experience and stay connected with our community.</p><br>
+            <div class="step-container">
+                <!-- Step 1 -->
+                <div class="step" id="step-1">
+                    <h2>Step 1: Personal Details</h2><br>
+                    <div class="prompt" id="prompt-1-1">
+                        <label for="name">Your Name (required)</label>
+                        <input type="text" id="name" class="prompt-input">
+                        <button class="next-btn" data-step="1" data-question="1">Next</button>
+                        <button class="skip-btn" data-step="1" data-question="1">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-1-2" style="display: none;">
+                        <label for="username">Your Preferred Username (required)</label>
+                        <input type="text" id="username" class="prompt-input">
+                        <button class="prev-btn" data-step="1" data-question="1">Back</button>
+                        <button class="next-btn" data-step="1" data-question="2">Next</button>
+                        <button class="skip-btn" data-step="1" data-question="2">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-1-3" style="display: none;">
+                        <label for="age">Your Age (required)</label>
+                        <input type="number" id="age" class="prompt-input">
+                        <button class="prev-btn" data-step="1" data-question="2">Back</button>
+                        <button class="next-btn" data-step="1" data-question="3">Next</button>
+                        <button class="skip-btn" data-step="1" data-question="3">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-1-4" style="display: none;">
+                        <label for="gender">Your Gender (required)</label>
+                        <input type="text" id="gender" class="prompt-input">
+                        <button class="prev-btn" data-step="1" data-question="3">Back</button>
+                        <button class="next-btn" data-step="1" data-question="4">Next</button>
+                        <button class="skip-btn" data-step="1" data-question="4">Skip</button>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="step" id="step-2" style="display: none;">
+                    <h2>Step 2: Educational Background</h2><br>
+                    <div class="prompt" id="prompt-2-1">
+                        <label for="school">Your Current School/University (required)</label>
+                        <input type="text" id="school" class="prompt-input">
+                        <button class="prev-btn" data-step="1" data-question="4">Back</button>
+                        <button class="next-btn" data-step="2" data-question="1">Next</button>
+                        <button class="skip-btn" data-step="2" data-question="1">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-2-2" style="display: none;">
+                        <label for="field-of-study">Field of Study</label>
+                        <input type="text" id="field-of-study" class="prompt-input">
+                        <button class="prev-btn" data-step="2" data-question="1">Back</button>
+                        <button class="next-btn" data-step="2" data-question="2">Next</button>
+                        <button class="skip-btn" data-step="2" data-question="2">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-2-3" style="display: none;">
+                        <label for="degree">Your Degree</label>
+                        <input type="text" id="degree" class="prompt-input">
+                        <button class="prev-btn" data-step="2" data-question="2">Back</button>
+                        <button class="next-btn" data-step="2" data-question="3">Next</button>
+                        <button class="skip-btn" data-step="2" data-question="3">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-2-4" style="display: none;">
+                        <label for="graduation-year">Year of Graduation</label>
+                        <input type="number" id="graduation-year" class="prompt-input">
+                        <button class="prev-btn" data-step="2" data-question="3">Back</button>
+                        <button class="next-btn" data-step="2" data-question="4">Next</button>
+                        <button class="skip-btn" data-step="2" data-question="4">Skip</button>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="step" id="step-3" style="display: none;">
+                    <h2>Step 3: Additional Information</h2><br>
+                    <div class="prompt" id="prompt-3-1">
+                        <label for="email">Your Email (required)</label>
+                        <input type="email" id="email" class="prompt-input">
+                        <button class="prev-btn" data-step="2" data-question="4">Back</button>
+                        <button class="next-btn" data-step="3" data-question="1">Next</button>
+                        <button class="skip-btn" data-step="3" data-question="1">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-3-2" style="display: none;">
+                        <label for="contact">Your Contact Number (required)</label>
+                        <input type="text" id="contact" class="prompt-input">
+                        <button class="prev-btn" data-step="3" data-question="1">Back</button>
+                        <button class="next-btn" data-step="3" data-question="2">Next</button>
+                        <button class="skip-btn" data-step="3" data-question="2">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-3-3" style="display: none;">
+                        <label for="study-hours">Hours Available for Study Per Week</label>
+                        <input type="number" id="study-hours" class="prompt-input">
+                        <button class="prev-btn" data-step="3" data-question="2">Back</button>
+                        <button class="next-btn" data-step="3" data-question="3">Next</button>
+                        <button class="skip-btn" data-step="3" data-question="3">Skip</button>
+                    </div>
+                    <div class="prompt" id="prompt-3-4" style="display: none;">
+                        <label for="study-method">Preferred Study Method (required)</label>
+                        <input type="text" id="study-method" class="prompt-input">
+                        <button class="prev-btn" data-step="3" data-question="3">Back</button>
+                        <button class="finish-btn" data-step="3" data-question="4">Finish</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Progress bar container-->
+            <div class="progress-container">
+                <div id="progress-label">Profile completed: 0%</div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <!--Profile output section-->
+            <div class="profile-output">
+                <h2>Your Details</h2>
+                <div id="output-content">
+                    <!-- Dynamic content of the user profile will be inserted here -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- Confirmation Modal -->
+        <div class="modal" id="confirmation-modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Confirm Your Details</h2>
+                <p>Please confirm that all the details you provided are true. Your profile will be created shortly after you confirm.</p>
+                <button id="confirm-btn">Confirm</button>
+                <button id="back-btn">Back</button>
+            </div>
+        </div>
+        <script src="../JS/profile.js"></script>
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div>
+            <ul class="social">
+                <li><a href="https://www.youtube.com"><img src="../Pictures/common/Youtube.png" alt="youtube" width="50" ></a></li>
+                <li><a href="https://www.facebook.com"><img src="../Pictures/common/Facebook.png" alt="facebook" width="50"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="../Pictures/common/Instagram.png" alt="instagram" width="50"></a></li>
+            </ul>
+            <p class="dev">&copy; 2024 EduSphere. All Rights Reserved. | Designed and Developed by <a href="../HTML/page_editor_student3.html" class="pd">Thisuka Sanvidu.</a></p>
+            
+            <div class="other-container">
+                <ul class="other">
+                    <li><a href="../HTML/home.html">Home</a> |</li>
+                    <li><a href="../HTML/shop.html">Shop</a> |</li>
+                    <li><a href="../HTML/gallery.html">Gallery</a> |</li>
+                    <li><a href="../HTML/sitemap.html">Site Map</a> |</li>
+                    <li><a href="../HTML/team.html">Team</a> |</li>
+                    <li><a href="../HTML/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

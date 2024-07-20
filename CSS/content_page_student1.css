@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+    background-image: url('../Pictures/content_page/content_page_background_student1.webp'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Ensure the background stays fixed when scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Increase the font size for the main heading */
+    margin-bottom: 20px; /* Add some margin below the main heading */
+}
+
+.fcontent {
+    width: 90%; /* Increase the width to occupy more space */
+    max-width: 1200px; /* Increase the max-width */
+    margin: 50px auto;
+    margin-top: 5%; /* Adjust the top margin */
+    padding: 40px; /* Increase padding for more spacious content */
+    background-color: #dbd6d6ec; /* Solid background color for the form container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.747); /* Increase the shadow effect */
+    border-radius: 10px; /* Slightly rounder corners */
+}
+
+.c-img {
+    width: 50%; /* Increase the width of the image */
+    display: block; /* Ensures the image behaves like a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Content p {
+    text-align: justify;
+    line-height: 200%;
+    font-size: 1.2em; /* Increase the font size for better readability */
+}
+
+.scroll-image img {
+    width: 75px; 
+    position: fixed;
+    bottom: 10px;
+    left: 08px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+.con_box {
+    text-align: center;
+}
+.con {
+    padding: 0;
+}
+
+.con li {
+    margin: -17px; /* Adjust the margin to decrease space between items */
+    
+}
+
+.con a {
+    color: rgb(15, 6, 77);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.con a:hover {
+    border-bottom: solid 2px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subtopic-image {
+    max-width: 50%; /* Make the images more suitable */
+    height: auto;
+    border-radius: 8px;
+}

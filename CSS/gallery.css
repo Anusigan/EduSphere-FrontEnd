@@ -1,0 +1,304 @@
+
+#sentence{
+    padding-top: 10%; /* Adding the padding to the top of the sentence section */
+}
+
+/*Styling the quote in gallery page by making it bold and sixe 20px and aligning to center*/
+#quote {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#author {
+    padding-left: 600px;   /* Adding the padding for th left of the author section */
+}
+
+.gallery_container {
+    display: grid; /*setting the galery container to the grid layout*/
+    grid-template-columns: repeat(3, 1fr);  /*Defining the three equal columns for the gallery layout*/
+    column-gap: 15px; /*Setting the gap between the coloumns of gallery */
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 60px;
+    row-gap: 5px; /*Setting the gap in between the rows of gallery containers*/
+    
+}
+
+.gallery_container .image_box {
+    position: relative; /*Positioning  the image box relative to its normal position*/
+}
+
+.gallery_container .image_box .heading {
+    background: rgba(255, 255, 255, 0.8); /*for the semi transaparent background of gallery page*/
+    padding: 10px;
+    position: absolute; /*Positioning the heading of the image box */
+    bottom: 0; /*Positioning the heading of the image box in the bottom*/
+    left: 0; 
+    width: 100%;
+    text-align: center; 
+}
+
+
+/*Style to format the image in the gallery boxes*/
+.gallery_container .image_box img {
+    height: 250px;
+    width: 100%;
+    border: 2px solid black;
+    transition: 0.50s;
+    cursor: pointer; /*Changing the cursor as pointer when hovering*/
+}
+
+.gallery_container .image_box img:hover {
+    transform: scale(1.05); /*Scaling the image to zoom to 1.05 when hovering */
+    box-shadow: 10px 10px 10px 10px black; /*Shadow effect*/
+}
+
+/* Popup styles */
+.popup-image {
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000; /* Setting the high z-index to overlay other content */
+    flex-direction: column; /* Setting  the flex direction to column */
+}
+
+
+/*Aligning the image popup content container*/
+.popup-image img {
+    max-width: 90%;
+    max-height: 70%;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Centering the popup-content container */
+.popup-image .popup-content {
+    position: relative;
+    background:gray;
+    border-radius: 5px;
+    padding: 20px;
+    width: 800px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: auto;
+}
+
+
+.popup-image .popup-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-image .description {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*Styling for the colour picker section*/
+.color-picker {
+    text-align: center;
+}
+
+.color-picker p {
+    display: inline-block;
+}
+
+
+/*Styling for the colour options */
+.color-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/*Styles for the font style picking section*/
+
+.font-style-picker {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.font-style-picker p {
+    display: inline-block;
+}
+
+.font-style-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.font-style-option {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+
+/*Styles for the spotlight section*/
+#spotlight{
+    text-align: center;
+    font-family:cursive;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+/*Styling the containrs within the spotlight section*/
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+
+
+/*Styling for the spotlight cards section*/
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99); /*Smooth transition effect*/
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+
+/*Styling the rows of each card */
+.card .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap; /*Preventing the wrapping of items*/
+}
+
+
+/*Styling the icons within each row*/
+.card .row .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+
+
+/*Styling for the decription in each slide*/
+.card .row .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+
+/*Styling the heading text within the descriptions*/
+.description h4 {
+    text-transform: uppercase;
+    color:white;
+    background-color: #223;
+    margin-right: 80px;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*Hiding the input elements*/
+input {
+    display: none;
+}
+
+/*Setting the width of the label to 600 when the input is checked*/
+input:checked + label {
+    width: 600px;
+}
+
+
+
+input:checked + label .description {
+    opacity: 1 !important;  /* Making the description text visible when the associated input is checked */
+    transform: translateY(0) !important;  /* Resets the transformation of the description text when the associated input is checked */
+}
+
+.card[for="c1"] {
+    background-image: url('../Pictures/gallery/spotlight\ image01.jpg');
+}
+.card[for="c2"] {
+    background-image: url('../Pictures/gallery/spotlight\ image03.jpg');
+}
+.card[for="c3"] {
+    background-image: url('../Pictures/gallery/spotlight\ image02.jpg');
+}
+.card[for="c4"] {
+    background-image: url('../Pictures/gallery/spotlight\ image04.jpg');
+}
+
+
+
+.scroll-image img {
+    width:75px; 
+    position: fixed;
+    bottom: 10px;
+    left: 08px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+

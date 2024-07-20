@@ -1,0 +1,77 @@
+body {
+    min-height: 100vh;/* Ensure the body takes at least the full height of the viewport */
+    background-image: url('../Pictures/content_page/content_page_background_student2.jpg'); /* Add your background image here */
+    background-size: cover;/* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;/* Prevent the background image from repeating */
+    background-attachment: fixed; /* Ensure the background stays fixed when scrolling */
+    display: flex;/* Use flexbox for layout */
+    flex-direction: column;/* Arrange children elements in a column */
+}
+
+
+h1{
+    text-align: center;/* Center-align the text for all h1 elements */
+}
+
+h2{
+    margin-top: 5%;/* Add top margin to h2 elements */
+    margin-bottom: 2%;/* Add bottom margin to h2 elements */
+}
+
+.fcontent{
+    width: 100%;/* Set the width to 100% */
+    max-width: 1100px;/* Set the maximum width */
+    margin: 50px auto; /* Center the element with auto left/right margins and 50px top/bottom margins */
+    margin-top: 10%; /* Add top margin of 10% */
+    margin-bottom: 7%;
+    padding: 20px;/* Add padding inside the container */
+    background-color: #dbd6d6ec; /* Solid background color for the form container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);/* Add a shadow effect */
+    border-radius: 8px;  /* Round the corners of the container */
+}
+
+.c-img {
+    width: 40%; /* Set the width to 40% */
+    display: block; /* Ensures the image behaves like a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Content p {
+    text-align: justify;/* Justify the text for better readability */
+    line-height: 200%;/* Increase line height to 200% */
+}
+
+.scroll-image img {
+    width:75px;  /* Set the width to 75px */
+    display: none;/* Initially hide the image */
+    position: fixed;/* Position the image fixed to the viewport */
+    bottom: 10px;/* Position the image 10px from the bottom */
+    left: 08px;/* Position the image 8px from the left */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+.con_box{
+    text-align: center;/* Center-align text inside con_box */
+}
+.con {
+    padding: 0;/* Remove default padding */
+}
+
+.con li {
+    margin: -17px; /* Adjust the margin to decrease space between items */
+    
+}
+
+.con a {
+    color: rgba(38, 15, 138, 0.904); /* Set the link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;/* Make the text bold */
+}
+
+.con a:hover {
+    border-bottom: solid 2px;/* Add a solid underline on hover */
+}

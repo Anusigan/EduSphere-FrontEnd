@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback form</title>
+    <link rel = "stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/feedback.css">
+</head>
+<body class="background">
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <a href="../HTML/home.html"><img src="../Pictures/common/Logo.png" alt="Logo" class="nav-logo"></a>
+            </div>
+            <ul> <!-- Navigation menu items -->
+                <li class = "na"><a href="../HTML/home.html">Home</a></li>
+                <li class = "na"><a href = "../HTML/shop.html">Shop</a></li>
+                <li class = "na"><a href = "../HTML/gallery.html">Gallery</a></li>
+                <li class = "na" ><a href = "../HTML/sitemap.html">Site Map</a></li>
+                <li class = "na"><a href = "../HTML/team.html">Team</a></li>
+                <li  id="active-tab"><a href = "../HTML/feedback.html">Feedback</a></li>
+                <li class = "na"><a href = "../HTML/profile.html">User Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="fcontent" id="fcontent">
+            <!-- Feedback form -->
+            <form id="feedback-form" action="javascript:void(0);" method="post">
+                <h1>Feedback Form</h1>
+                <label for="name">1. Enter your name: </label>
+                <input type="text" id="name" name="name" size="75">
+
+                <label for="email">2. Enter your email: </label>
+                <input type="text" id="email" name="email" size="75">
+
+                <div class="age">
+                    <label for="age">3. Enter your age: </label>
+                    <input type="number" id="age" name="age" min="10" max="120">
+                </div>
+
+                <label for="visit">4. How often do you visit our website?</label>
+                <select id="visit" name="visit">
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Rarely">Rarely</option>
+                </select>
+
+                <label>5. How would you rate the quality of the content on our website?</label>
+                <input type="radio" id="content-quality-excellent" name="content-quality" value="Excellent">
+                <label for="content-quality-excellent">Excellent</label><br>
+                <input type="radio" id="content-quality-good" name="content-quality" value="Good">
+                <label for="content-quality-good">Good</label><br>
+                <input type="radio" id="content-quality-average" name="content-quality" value="Average">
+                <label for="content-quality-average">Average</label><br>
+                <input type="radio" id="content-quality-poor" name="content-quality" value="Poor">
+                <label for="content-quality-poor">Poor</label>
+
+                <label>6. Is the content relevant to your needs?</label>
+                <input type="radio" id="content-relevance-yes" name="content-relevance" value="Yes" >
+                <label for="content-relevance-yes">Yes</label><br>
+                <input type="radio" id="content-relevance-no" name="content-relevance" value="No">
+                <label for="content-relevance-no">No</label>
+
+                <label>7. How would you rate the overall design of our website?</label>
+                <input type="radio" id="design-rating-excellent" name="design-rating" value="Excellent" >
+                <label for="design-rating-excellent">Excellent</label><br>
+                <input type="radio" id="design-rating-good" name="design-rating" value="Good">
+                <label for="design-rating-good">Good</label><br>
+                <input type="radio" id="design-rating-average" name="design-rating" value="Average">
+                <label for="design-rating-average">Average</label><br>
+                <input type="radio" id="design-rating-poor" name="design-rating" value="Poor">
+                <label for="design-rating-poor">Poor</label>
+
+                <label>8. How easy is it to navigate our website?</label>
+                <input type="radio" id="navigation-ease-very-easy" name="navigation-ease" value="Very easy">
+                <label for="navigation-ease-very-easy">Very easy</label><br>
+                <input type="radio" id="navigation-ease-easy" name="navigation-ease" value="Easy">
+                <label for="navigation-ease-easy">Easy</label><br>
+                <input type="radio" id="navigation-ease-difficult" name="navigation-ease" value="Difficult">
+                <label for="navigation-ease-difficult">Difficult</label><br>
+                <input type="radio" id="navigation-ease-very-difficult" name="navigation-ease" value="Very difficult">
+                <label for="navigation-ease-very-difficult">Very difficult</label>
+
+                <label>9. How do you rate the effectiveness of our feedback mechanism?</label>
+                <input type="radio" id="feedback-mechanism-excellent" name="feedback-mechanism" value="Excellent">
+                <label for="feedback-mechanism-excellent">Excellent</label><br>
+                <input type="radio" id="feedback-mechanism-good" name="feedback-mechanism" value="Good">
+                <label for="feedback-mechanism-good">Good</label><br>
+                <input type="radio" id="feedback-mechanism-neutral" name="feedback-mechanism" value="Neutral">
+                <label for="feedback-mechanism-neutral">Neutral</label><br>
+                <input type="radio" id="feedback-mechanism-poor" name="feedback-mechanism" value="Poor">
+                <label for="feedback-mechanism-poor">Poor</label><br>
+
+                <label for="improvement-suggestions">10. Do you have any suggestions for improvement?</label>
+                <textarea id="improvement-suggestions" name="improvement-suggestions"></textarea>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="preview-section" class="preview-section">  <!-- Preview section for feedback form data -->
+            <h2>Preview Your Feedback</h2>
+            <p><strong>Name:</strong> <span id="preview-name"></span></p>
+            <p><strong>Email:</strong> <span id="preview-email"></span></p>
+            <p><strong>Age:</strong> <span id="preview-age"></span></p>
+            <p><strong>Visit Frequency:</strong> <span id="preview-visit"></span></p>
+            <p><strong>Content Quality:</strong> <span id="preview-content-quality"></span></p>
+            <p><strong>Content Relevance:</strong> <span id="preview-content-relevance"></span></p>
+            <p><strong>Design Rating:</strong> <span id="preview-design-rating"></span></p>
+            <p><strong>Navigation Ease:</strong> <span id="preview-navigation-ease"></span></p>
+            <p><strong>Feedback Mechanism:</strong> <span id="preview-feedback-mechanism"></span></p>
+            <p><strong>Improvement Suggestions:</strong> <span id="preview-improvement-suggestions"></span></p>
+            <button onclick="editForm()">Edit</button>
+            <button onclick="confirmSubmission()">Confirm</button>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <!-- Popup message for feedback submission -->
+                <p>Thank you for your feedback. We value every piece of feedback we receive. We cannot respond individually to every one, but we will use your comments as we strive to improve your experience.</p>
+                <button onclick="redirectToHome()">OK</button>
+            </div>
+        </div>
+    
+    <footer>
+        <div>
+            <ul class="social"> <!-- Social media links -->
+                <li><a href="https://www.youtube.com"><img src="../Pictures/common/Youtube.png" alt="youtube" width="50" ></a></li>
+                <li><a href="https://www.facebook.com"><img src="../Pictures/common/Facebook.png" alt="facebook" width="50"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="../Pictures/common/Instagram.png" alt="instagram" width="50"></a></li>
+            </ul>
+            <p class="dev">&copy; 2024 EduSphere. All Rights Reserved. | Designed and Developed by <a href = "../HTML/page_editor_student2.html" class ="pd">Nisal Rukshan.</a></p>  
+        </div>
+        
+        <div class="other-container">
+            <ul class="other">
+                <li><a href="../HTML/home.html">Home</a> |</li>
+                <li><a href="../HTML/shop.html">Shop</a> |</li>
+                <li><a href="../HTML/gallery.html">Gallery</a> |</li>
+                <li><a href="../HTML/sitemap.html">Site Map</a> |</li>
+                <li><a href="../HTML/team.html">Team</a> |</li>
+                <li><a href="../HTML/profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    </footer> 
+    
+    <script src="../JS/feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Style for the background section */
+.background {
+    display: flex; /* Flexbox layout */
+    justify-content: center;/* Center content horizontally */
+    align-items: center; /* Align items vertically */
+    width: auto;
+    height: 1000px;
+    background-image: url('../Pictures/home/home_background.jpg');
+    background-size: cover; /* Cover entire section */
+    background-position: center;  /* Center image */
+}
+
+/* Style for the slogan text */
+.slogan {
+    max-width: 800px; /* Adjust as necessary for desired text width */
+    margin-top: -2%;
+    margin-left: 37%;
+    line-height: 1.5; /* Adjust as necessary for desired line spacing */
+    text-align: center; /* Center text inside the paragraph */
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.miss{
+    font-size:xxx-large; /* Extra large font size */
+}
+
+/* Style for the mission text */
+.mission{
+    text-align: center;/* Center the text */
+    margin-top: 5%;
+    line-height: 250%;/* Set line spacing */
+    font-size: larger;/* Increase font size */
+}
+
+/* Style for recommended and blog sections */
+.rec,.blog{
+    padding-left: 3.5%;/* Add padding to the left */
+    margin-top: 5%;/* Add margin to the top */
+}
+
+/* Style for the shop link */
+.shop a{
+    margin-left: 92.5%;/* Align link 92.5% from the left */
+    color:#0095A9FF;/* Set text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for the shop link */
+.shop a:hover {
+    border-bottom: solid 2px; /* This adds underline on hover*/
+}
+
+/* Style for courses and blogs sections */
+.courses,.blogs {
+    display: flex;
+    z-index: 2;/* Set stack order */
+    min-width: 50px; /* Minimum width */
+    overflow-x: scroll; /* Horizontal scroll */
+}
+
+/* Additional margin adjustments for blogs section */
+.blogs{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.courses::-webkit-scrollbar,.blogs::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.courses img,.blogs img {
+    transition: transform 0.3s ease, opacity 0.3s ease;/* Smooth transition for hover effects */
+ }
+
+.courses img:hover,.blogs img:hover {
+    transform: scale(1.07);/* Slightly increase the size */
+    opacity: 0.8;/* Slightly reduce opacity */
+}
+
+.scroll-image img {
+    display: none;/* Hide image by default */
+    position: fixed;/* Fixed position */
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the image */
+.scroll-image img:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    opacity: 0.8; /* Slightly reduce opacity */
+}

@@ -1,0 +1,438 @@
+/* Remove margin and padding from the html and body elements */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('f.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.EduMiddle-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 100px;
+    color: #000000cd;
+}
+.Eduhr1 {
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    border: none;
+    width: 90%;
+    margin-right: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Eduheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10px 20px 150px;
+    margin-bottom: 0;
+}
+
+
+.flogo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding-left: 1%;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.Educontainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Eduproducts {
+    padding: 20px;
+}
+
+.Eduproduct-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.Eduproduct-title {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+.Eduproduct-card {
+    background-color: #80acb17d;
+    border: 3px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+.Eduprice {
+    font-weight: 500;
+    margin: 5px;
+    color: rgb(0, 0, 255);
+}
+
+select {
+    font-size: 0.8rem;
+}
+
+label {
+    font-size: 0.8rem;
+    margin: 5px;
+}
+
+#EduuniqueImageId {
+    width: 350px;
+    height: 175px;
+    object-fit: cover;
+}
+
+#EduuniqueImageIdTextb {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.Eduproduct-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.Eduproduct-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.Eduproduct-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.Eduadd-cart {
+    background-color: #609bcb97;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.Eduadd-cart:hover {
+    background-color: #214bc99e;
+}
+
+/* Add hover effect for product cards */
+.Eduproduct-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add styling for select (option) boxes */
+.Edusize-options {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Edusize-options:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.Edusize-options:hover {
+    border-color: #0056b3;
+    background-color: #e9ecef;
+}
+
+/* Styling for the label of the select box */
+.Edusize-options label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+.cart-icon ion-icon {
+    font-size: 2.5rem;
+}
+
+.Educart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #000000;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    padding: 2px 10px;
+}
+
+.Educart {
+    position: fixed;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 4px;
+    top: 0;
+    right: -100%;
+    min-height: 100vh;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.Educart.active {
+    right: 0;
+}
+
+.Educart-title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #080808b6;
+}
+
+.Educart-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #59b2c1;
+}
+
+.Educart-detail {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.Educart-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.Educart-product {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Educart-price {
+    margin-right: 20px;
+}
+
+.Eduquantity {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.Educart-remove {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
+
+.Edutotal {
+    display: flex;
+    border-top: 1px solid #a6c3ce;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.Edutotal-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #080808b6;
+}
+
+.Edutotal-price {
+    margin: 4px 20px;
+    font-weight: 600;
+    color: #080808b6;
+}
+
+.Edubuy-button {
+    display: flex;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-color: #609bcb97;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.Edubuy-button:hover {
+    background-color: #214bc99e;
+}
+
+.Educlear-cart-button {
+    display: flex;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+}
+
+.Educlear-cart-button:hover {
+    background-color: #ff4500; /* OrangeRed color */
+}
+
+#cart-close {
+    position: absolute;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+    top: 1rem;
+    right: 0.8rem;
+}
+
+.EducheckoutLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin : 20px auto 0;
+    margin-bottom: 5%;
+    background-color: #80acb17d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.EdureturnCart {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.EdureturnCart a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.EdureturnCart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Edulist {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Eduitem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Eduitem img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.Eduinfo {
+    flex: 1;
+    text-align: left;
+}
+
+.Eduname {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Eduprice, .EdureturnPrice {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 300px;
+}
+
+.Eduquantity {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.Edureturn {
+    width: 100%;
+    text-align: center;
+}
+
+.Edurow:last-child {
+    margin-bottom: 0;
+}
+
+.Edurow {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.EduCheckout-button,
+.Eduedit-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #609bcb97;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.EduCheckout-button:hover,
+.Eduedit-button:hover {
+    background-color: #214bc99e;
+}

@@ -1,0 +1,134 @@
+/* Remove margin and padding from the html and body elements */
+html, body {
+    font-family: Arial, sans-serif;/* Set the default font family */
+    margin: 0;/* Remove default margin */
+    padding: 0;/* Remove default padding */
+    background-color: #c9cacf42;/* Set background color with transparency */
+}
+
+/* Style for the list items in the nav bar */
+li {
+    display: inline;/* Display list items in a single line */
+    padding: 20px;/* Add padding around list items */
+}
+
+#navbar{
+    z-index:4 ;/* Ensure navbar is above other elements */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);/* Add shadow to navbar */
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: white; /* Set background color for navbar */
+    overflow: hidden;/* Hide overflow content */
+    position: fixed;/* Fix navbar at the top */
+    top: 0;
+    width: 100%;
+    display: flex;/* Use flexbox layout */
+    align-items: center;/* Center align items vertically */
+    justify-content: space-between; /* Ensure space between logo and nav items */
+    padding: 3px 20px; /* Adjust padding to remove left and right spaces */
+    z-index:1000; /* Ensure navbar is on top of other elements */
+}
+.nav-logo {
+    width: 90px; /* Adjust the width as needed */
+    height: 85px; /* Maintain aspect ratio */
+}
+
+nav ul {
+    display: flex;
+    font-weight: bold;/* Make font bold */
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0 auto; /* Center the navigation items */
+}
+
+/* Style for individual list items */
+nav ul li {
+    margin: 0 10px;/* Add margin between list items */
+}
+
+.na a{
+    color: black;/* Set link color */
+    text-decoration: none;/* Remove underline from links */
+}
+
+.na:hover{
+    transform: scale(1.2);/* Scale up on hover */
+    opacity: 0.8;/* Reduce opacity on hover */
+}
+
+/*style the tab */
+#active-tab a{
+    color: black;/* Set link color */
+    text-decoration: none;
+    padding-bottom: 5%; /* Add padding to the bottom */
+    border-bottom: solid 3px;  /* Add underline to active tab */
+    cursor:default;/* Set cursor to default */
+}
+
+footer{
+    /* background-color: #dbd6d6e3; */
+    padding-bottom: 0.2%;/* Add padding to the bottom */
+    background-color: #c9cacfc1;/* Set background color with transparency */
+    border-top: solid black 1px; /* Add top border to footer */
+}
+.social{
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center;/* Center align social icons */
+    margin-top: -0.5%; /* Adjust top margin */
+    margin-bottom: -1.2%;/* Adjust bottom margin */
+}
+
+.social li {
+    margin: 0 -18px; /* Adjust the spacing between items as needed */
+    filter: grayscale(100%); /* Apply grayscale filter to social icons */
+}
+
+.social img {
+    transition: transform 0.3s ease, opacity 0.3s ease;/* Add transition effects for transform and opacity */
+ }
+
+.social img:hover {
+    transform: scale(1.2);/* Scale up on hover */
+    opacity: 0.8;/* Reduce opacity on hover */
+}
+
+.dev{
+    text-align: center;/* Center align text */
+    font-size: small; /* Set small font size */
+    font-weight: bold;
+    margin-bottom: 1%; /* Add margin to the bottom */
+}
+
+.dev a{
+    color: rgba(38, 15, 138, 0.904);/* Set link color */
+    text-decoration: none;/* Remove underline from links */
+}
+
+.dev a:hover{
+    border-bottom: solid 1px;/* Add underline on hover */
+}
+
+.other-container {
+    text-align: center;/* Center align text */
+}
+
+.other {
+    padding: 0;/* Remove default padding */
+}
+
+.other li {
+    margin: -17px; /* Adjust the margin to decrease space between items */
+}
+
+.other a {
+    color: black; /* Set link color */
+    text-decoration: none;/* Remove underline from links */
+}
+
+.other a:hover {
+    border-bottom: solid 1px;/* Add underline on hover */
+}

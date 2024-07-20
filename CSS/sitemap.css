@@ -1,0 +1,135 @@
+html {
+    height:fit-content;
+    background-image: url('../Pictures/site_map/sitemap\ bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    
+}
+
+main {
+    height: 110vh; 
+    
+}
+
+
+
+
+.heading{
+        justify-content: center;
+        align-items: center;
+        flex-grow:1;
+        padding: 30px;
+        height: 50vh;
+        padding-left: 60px;
+        display:flex;
+        
+}
+
+#headingtext{
+      text-align:center;
+      font-size:85px;
+      color:rgb(25, 2, 60);
+      display:flex;
+      
+}
+
+
+svg {
+    display: block;
+    margin: -35px auto;
+    display:flex;
+    display:flex;
+    
+}
+
+.sitemap{
+	  background-size:cover;
+      position:relative;
+      width: 100%;
+      display:flex;
+      
+}
+
+  
+  .link {
+    fill: none;
+    stroke:rgb(25, 2, 60);
+    stroke-width: 5px;
+    display:flex;
+  }
+  .text {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      fill:rgb(20, 20, 20);
+      font-size:18px;
+      
+  }
+  .circle {
+      stroke-linecap: butt;
+      stroke-width: 5px;
+      fill:rgb(25, 2, 60);
+  }
+
+  a:link circle {
+      stroke-width: 3;
+  }
+  a:visited circle {
+      stroke:rgb(150, 67, 67);
+      stroke-width: 5;
+  }
+  a:hover circle {
+      stroke:greenyellow;
+      stroke-width: 5;
+  }
+  a:active circle {
+      stroke:green;
+      stroke-width:5;
+  }
+  a:link text {
+      fill: #ffffff;
+  }
+  a:visited text {
+      fill:yellow;
+  }
+  a:hover text {
+      fill:rgb(199, 237, 239);
+  }
+  a:active text {
+      fill:lime;
+  }
+
+
+  .scroll-image img {
+    width:75px; 
+    position: fixed;
+    bottom: 10px;
+    left: 08px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #headingtext {
+        font-size: 30px;
+        padding-top: 20%;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+
+
+  

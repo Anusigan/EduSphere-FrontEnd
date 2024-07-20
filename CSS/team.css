@@ -1,0 +1,79 @@
+/* Team page container */
+.team-page-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 100px;  /*Add top margin to space it from the header*/
+    
+}
+
+/* Team members container */
+.team-member-container {
+    display: flex;
+    justify-content: center;  /* Center align the team members horizontally */
+    gap: 30px;
+}
+
+/* Individual team member styling */
+.team-member {
+    position: relative;  /*Set position relative for absolute positioning of details */
+    width: 200px;
+    cursor: pointer;  /*Change cursor to pointer on hover */
+}
+
+/* Team member thumbnail image */
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;  /*Set transparent border initially*/
+    transition: all 0.3s ease;  /*Add transition for smooth effect*/
+    border-radius: 8px;
+}
+
+/* Team member details */
+.team-member-details {
+    position: absolute;  /*Position details absolutely within the team member */
+    top: calc(100% + 10px);  /*Position below the thumbnail with some space */
+    left: 0;
+    width: 100%;  /*Take full width of the container */
+    background-color: #dbd7d7;
+    border: 1px solid #ccc;  /* Add a light border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow */
+    padding: 2px;
+    opacity: 0;
+    transform: translateY(10px);  /* Slightly move down initially */
+    transition: all 0.3s ease;  /* Add transition for smooth effect */
+    z-index: -1;  /* Position below the thumbnail */
+}
+
+/* Hover effect for team member */
+.team-member:hover .thumbnail {
+    opacity: 0.7;  /* Make thumbnail semi-transparent on hover */
+    border-color: #333;  /* Change border color on hover */
+    transform: scale(1.05);  /* Slightly enlarge the thumbnail on hover */
+}
+
+/* Show team member details on hover */
+.team-member:hover .team-member-details {
+    opacity: 1;  /* Make details visible on hover */
+    transform: translateY(0);  /* Move details to original position */
+    z-index: 1;  /* Position details above the thumbnail */
+}
+
+.con{
+    margin-bottom: 10.5%;
+}
+
+/* Team page title */
+.team-title {
+    color: #116a99;
+    font-size: 2em;
+    margin: 30px 0;  /* Add margin above and below */
+}
+
+/* Team page description */
+.team-description {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}

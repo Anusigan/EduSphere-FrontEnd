@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Setting the viewport to make the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery</title>
+    <!-- Linking the external CSS stylesheets for gallery footer and header -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/gallery.css">
+</head>
+
+
+
+
+<body>
+
+    <header id="up">
+        <nav id="navbar">
+            <div class="logo">
+                <a href="../HTML/home.html"><img src="../Pictures/common/Logo.png" alt="Logo" class="nav-logo"></a>
+            </div>
+            <ul>
+                <li class = "na"><a href="../HTML/home.html">Home</a></li>
+                <li class = "na"><a href = "../HTML/shop.html">Shop</a></li>
+                <li id="active-tab"><a href = "../HTML/gallery.html">Gallery</a></li>
+                <li class = "na" ><a href = "../HTML/sitemap.html">Site Map</a></li>
+                <li class = "na"><a href = "../HTML/team.html">Team</a></li>
+                <li class = "na"><a href = "../HTML/feedback.html">Feedback</a></li>
+                <li class = "na"><a href = "../HTML/profile.html">User Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Quote in the gallery section -->
+        <div id="sentence">
+        <p id="quote">“The whole purpose of education is to turn mirrors into windows”</p>
+        <p id="author">Sydney J. Harris</p>
+        <br>
+        </div>
+
+
+        <!--First Gallery Section with all  functionality  -->
+        <div class="gallery_container">
+        <div class="image_box">
+            <span class="heading">Interactive Lessons</span>  <!--Inserting the heading for the image box -->
+            <img src="../Pictures/gallery/Childlearningonline.jpg" alt="Child learning through online" data-description="Discover the wide range of engaging courses and lessons on our platform, all created to enhance your learning experience. Interact with dynamic content that promotes involvement and expands knowledge on various topics. Whether you study in a group or on your own, our interactive method guarantees an engaging education that is customized to meet your needs">
+        </div>
+
+        <div class="image_box">
+            <span class="heading">Expert Tutors</span>
+            <img src="../Pictures/gallery/Teachers.jpg" alt="Teacher explaining a question" data-description="Meet a group of exceptionally knowledgeable teachers that are committed to supporting you as you progress through your education. Our tutors, who have a wealth of expertise and in-depth subject knowledge, offer individualized guidance and mentorship that is customized to your academic objectives. Our teachers are dedicated to assisting you in succeeding and gaining confidence in your studies, whether you're working on learning difficult subjects or getting ready for tests.">
+        </div>
+
+        <div class="image_box">
+            <span class="heading">Scholarly Victories</span>
+            <img src="../Pictures/gallery/Studentsuccess.jpg" alt="Student achievements" data-description="Honoring the outstanding accomplishments of our pupils who have flourished academically while receiving our assistance. Our students continually display extraordinary scholarly prowess, from publishing ground-breaking research to winning major competitions. Their achievements demonstrate not just how committed they are, but also how well our educational strategy develops academic excellence and talent.">
+        </div>
+
+        <div class="image_box">
+            <span class="heading">Meetups</span>  <!--Headings  for the image box in the gallery page -->
+            <img src="../Pictures/gallery/Webinars.jpg" alt="Student webinars" data-description="Get engaged with our lively community at our monthly gatherings, where educators and students get together to exchange ideas, build relationships, and work together. Every gathering includes thought-provoking talks, engaging workshops, and guest lecturers from diverse industries, providing insightful information and encouraging an ongoing learning environment. Our monthly gatherings offer a stimulating environment for both professional and personal development, whether your goal is to meet new people or broaden your horizons">
+        </div>
+
+        <div class="image_box">
+            <span class="heading">Global Engagement</span>
+            <img src="../Pictures/gallery/Globalstudents.jpg" alt="Global community students" data-description="A vibrant global network of teachers and students that spans all continents. Through cooperative initiatives, interactive learning opportunities, and cross-cultural interactions, our platform promotes global involvement. Establish crucial international relationships with peers and experts throughout the globe to enhance your educational journey by broadening your perspective and gaining insights from other opinions">
+        </div>
+
+        <div class="image_box">
+            <span class="heading">Virtual Projects</span>
+            <img src="../Pictures/gallery/Virtualprojects.jpg" alt="Virtual group projects" data-description="Take part in interactive online projects on our platform where students work together virtually to solve real-world problems. Our virtual projects offer opportunities to apply classroom information in real-world contexts and provide hands-on experience, ranging from team-based assignments to creative research endeavors. Join forces with colleagues throughout the world, utilize digital tools, and contribute significantly to a range of initiatives that will help you succeed in the linked world of today">
+        </div>
+        </div>
+
+
+         <!--Image pop up section of the gallery page-->
+        <div class="popup-image" style="display: none;">
+            <span>&times;</span> 
+            <div class="popup-content">
+            <img src=" " alt=" ">
+            <div class="description"></div>
+            <div class="color-picker">
+                <p>Select Background Color:</p>
+                <!--Colour changing  section to change the background colour of the popup-->
+                <div class="color-options">
+                    <div class="color-option" style="background-color: rgb(162, 169, 100);"></div>
+                    <div class="color-option" style="background-color: rgb(230, 243, 230);"></div>
+                    <div class="color-option" style="background-color: rgb(129, 138, 138);"></div>
+                    <div class="color-option" style="background-color: rgb(143, 205, 138);"></div>
+                    <div class="color-option" style="background-color: rgb(234, 138, 138);"></div>
+                </div>
+            </div>
+            
+            <!--Font style changing  section to change the font style of the description in the popup-->
+            <div class="font-style-picker">
+                <p>Select Font Style:</p>
+                <div class="font-style-options">
+                    <div class="font-style-option" data-font-style="Arial">Arial</div>
+                    <div class="font-style-option" data-font-style="Verdana">Verdana</div>
+                    <div class="font-style-option" data-font-style="Tahoma">Tahoma</div>
+                    <div class="font-style-option" data-font-style="Times New Roman">Times New Roman</div>
+                    <div class="font-style-option" data-font-style="Courier New">Courier New</div>
+                    <div class="font-style-option" data-font-style="Georgia">Georgia</div>
+                    <div class="font-style-option" data-font-style="Comic Sans MS">Comic Sans MS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Spotlight section where the recent events of the company dispayed-->
+    <h2 id="spotlight">EVENT SPOTLIGHT</h2>
+    <div class="wrapper">
+        <div class="container">
+
+             <!-- Radio button for selecting the first event,and making it checked by the default -->
+            <input type="radio" name="slide" id="c1" checked>
+
+            <label for="c1" class="card">  <!-- Label that acting as a card-->
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">  <!-- Div class to style for the event description -->
+                        <h4>ai community meetup-june </h4> <!-- Heading for the spotlight event description -->
+                    </div>
+                </div>
+
+            </label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Edusphere Holi Bash 2024</h4>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Edusphere Career Compass</h4>
+                    </div>
+                </div>
+            </label>
+
+
+            <input type="radio" name="slide" id="c4" >
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="description">
+                        <h4>Edusphere PitchFest</h4>
+                    </div>
+                </div>
+            </label>
+        
+        </div>
+    </div>
+    
+
+    <div class="scroll-image">
+        <a href="#up"><img src="../Pictures/content_page/content_page_uparrow.png"  alt="up-arrow"></a>
+    </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <ul class="social">
+                <li><a href="https://www.youtube.com"><img src="../Pictures/common/Youtube.png" alt="youtube" width="50" ></a></li>
+                <li><a href="https://www.facebook.com"><img src="../Pictures/common/Facebook.png" alt="facebook" width="50"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="../Pictures/common/Instagram.png" alt="instagram" width="50"></a></li>
+            </ul>
+            <p class="dev">&copy; 2024 EduSphere. All Rights Reserved. | Designed and Developed by <a href = "../HTML/page_editor_student4.html" class ="pd">Anusigan Sivananthan.</a></p> 
+        </div>
+        <div class="other-container">
+            <ul class="other">
+                <li><a href="../HTML/home.html">Home</a> |</li>
+                <li><a href="../HTML/shop.html">Shop</a> |</li>
+                <li><a href="../HTML/sitemap.html">Site Map</a> |</li>
+                <li><a href="../HTML/team.html">Team</a> |</li>
+                <li><a href="../HTML/feedback.html">Feedback</a> |</li>
+                <li><a href="../HTML/profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    </footer> 
+       
+        
+    
+     <!-- Linking the external JavaScript file for the functionality of the gallery page -->
+    <script src="../JS/gallery.js"></script>
+</body>
+</html>

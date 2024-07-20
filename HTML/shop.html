@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="../HTML/home.html"><img src="../Pictures/common/Logo.png" alt="Logo" class="nav-logo"></a>
+        </div>
+
+        <ul>
+            <li class="na"><a href="../HTML/home.html">Home</a></li>
+            <li class="na" id="active-tab"><a href="../HTML/shop.html">Shop</a></li>
+            <li class="na"><a href="../HTML/gallery.html">Gallery</a></li>
+            <li class="na"><a href="../HTML/sitemap.html">Site Map</a></li>
+            <li class="na"><a href="../HTML/team.html">Team</a></li>
+            <li class="na"><a href="../HTML/feedback.html">Feedback</a></li>
+            <li class="na"><a href="../HTML/profile.html">User Profile</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">
+            <ion-icon name="cart-outline"></ion-icon>
+            <div class="Educart-count">0</div>
+        </div>
+    </nav>
+    <div class="Educontainer">
+        <section>
+            <h2 class="EduMiddle-title" id="course">SHOP PRODUCTS</h2>
+        </section>
+        <hr class="Eduhr1">
+        <div class="Eduheading"></div>
+        <section class="Eduproducts">
+            <h2>Course</h2>
+            <div class="Eduproduct-grid">
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c1.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Coding With Python</h3>
+                    <p class="Eduprice">$40</p>
+                    <label for="EducourseLevel1">Course Levels:</label>
+                    <select id="EducourseLevel1" class="Edusize-options">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c2.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Photoshop Basics</h3>
+                    <p class="Eduprice">$35</p>
+                    <label for="EducourseLevel2">Course Levels:</label>
+                    <select id="EducourseLevel2" class="Edusize-options">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c3.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Web Development</h3>
+                    <p class="Eduprice">$50</p>
+                    <label for="EducourseLevel3">Course Levels:</label>
+                    <select id="EducourseLevel3" class="Edusize-options">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c4.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Coding With Java</h3>
+                    <p class="Eduprice">$45</p>
+                    <label for="EducourseLevel4">Course Levels:</label>
+                    <select id="EducourseLevel4" class="Edusize-options">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="Eduproducts">
+            <div class="Eduproduct-grid">
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c5.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Logo Design with Adobe Illustrator</h3>
+                    <p class="Eduprice">$70</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c6.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Digital Marketing</h3>
+                    <p class="Eduprice">$85</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c7.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Front End App Development</h3>
+                    <p class="Eduprice">$65</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/c8.png" alt="Product Image" id="EduuniqueImageId">
+                    <h3 class="Eduproduct-title">Coding With C#</h3>
+                    <p class="Eduprice">$75</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="Eduproducts">
+            <h2>Textbooks</h2>
+            <div class="Eduproduct-grid">
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t1.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Information Technology</h3>
+                    <p class="Eduprice">$32</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t2.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Mathematics for Computing</h3>
+                    <p class="Eduprice">$22</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t3.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Java: A Beginner's Guide</h3>
+                    <p class="Eduprice">$18</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t4.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Artificial Intelligence</h3>
+                    <p class="Eduprice">$48</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="Eduproducts">
+            <div class="Eduproduct-grid">
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t5.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Machine Learning</h3>
+                    <p class="Eduprice">$58</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t6.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Python: A Beginner's Guide</h3>
+                    <p class="Eduprice">$44</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t7.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Quantum Computation</h3>
+                    <p class="Eduprice">$28</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/t8.png" alt="Product Image" id="EduuniqueImageIdTextb">
+                    <h3 class="Eduproduct-title">Game Development Basics</h3>
+                    <p class="Eduprice">$32</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="Eduproducts">
+            <h2>Scientific Products</h2>
+            <div class="Eduproduct-grid">
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/sp1.png" alt="Product Image">
+                    <h3 class="Eduproduct-title">Periodic Table</h3>
+                    <p class="Eduprice">$10</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/sp2.png" alt="Product Image">
+                    <h3 class="Eduproduct-title">Microscope</h3>
+                    <p class="Eduprice">$400</p>
+                    <label for="EdumicroscopeColor">Choose Colours:</label>
+                    <select id="EdumicroscopeColor" class="Edusize-options">
+                        <option value="Black">Black</option>
+                        <option value="Silver">Silver</option>
+                    </select>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/sp3.png" alt="Product Image">
+                    <h3 class="Eduproduct-title">Beaker Set & Test Tubes</h3>
+                    <p class="Eduprice">$80</p>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+                <div class="Eduproduct-card">
+                    <img src="../Pictures/shop/sp4.png" alt="Product Image">
+                    <h3 class="Eduproduct-title">Scientific Calculator</h3>
+                    <p class="Eduprice">$20</p>
+                    <label for="EducalculatorColor">Choose Colours:</label>
+                    <select id="EducalculatorColor" class="Edusize-options">
+                        <option value="Blue">Blue</option>
+                        <option value="Pink">Pink</option>
+                    </select>
+                    <button class="Eduadd-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="Educart">
+        <div class="Educart-title">Your Order</div>
+        <div class="Educart-content"></div>
+        <div class="Edutotal">
+            <div class="Edutotal-title">Total</div>
+            <div class="Edutotal-price">$0</div>
+        </div>
+        <button type="button" class="Edubuy-button" id="buy-now-btn">Buy Now</button>
+        <button type="button" class="Educlear-cart-button" id="clear-cart-btn">Clear Cart</button>
+        <ion-icon name="close" id="cart-close"></ion-icon>
+    </div>
+    <div class="EducheckoutLayout" id="checkoutLayout">
+        <div class="EdureturnCart">
+            <h2>Order Summary</h2>
+            <div class="Edulist"></div>
+        </div>
+        <div class="Edureturn">
+            <div class="Edurow">
+                <div>Total Quantity:</div>
+                <div class="EdutotalQuantity">0</div>
+            </div>
+            <div class="Edurow">
+                <div>Total Price:</div>
+                <div class="EdutotalPrice">$0.00</div>
+            </div>
+            <div class="Edurow">
+                <button type="button" class="EduCheckout-button" id="checkout-btn">Checkout</button>
+                <button type="button" class="Eduedit-button" id="go-back-to-cart-btn">Return to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="social">
+            <li><a href="https://www.youtube.com"><img src="../Pictures/common/Youtube.png" alt="youtube" width="50"></a></li>
+            <li><a href="https://www.facebook.com"><img src="../Pictures/common/Facebook.png" alt="facebook" width="50"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="../Pictures/common/Instagram.png" alt="instagram" width="50"></a></li>
+        </ul>
+        <p class="dev">&copy; 2024 EduSphere. All Rights Reserved. | Designed and Developed by <a href="../HTML/page_editor_student1.html" class="pd">Senuth Damjaya.</a></p>
+        <div class="other-container">
+            <ul class="other">
+                <li><a href="../HTML/home.html">Home</a> |</li>
+                <li><a href="../HTML/gallery.html">Gallery</a> |</li>
+                <li><a href="../HTML/sitemap.html">Site Map</a> |</li>
+                <li><a href="../HTML/team.html">Team</a> |</li>
+                <li><a href="../HTML/feedback.html">Feedback</a> |</li>
+                <li><a href="../HTML/profile.html">User Profile</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../JS/shop.js"></script>
+</body>
+</html>

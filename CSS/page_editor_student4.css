@@ -1,0 +1,75 @@
+
+.container{
+    padding-top: 6%;
+    min-height: 100vh;
+    background-image: url('../Pictures/page_editor/page_editor_background_student4.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.content{
+    width: 620px;
+    height: auto;
+    background-color: #dbd6d6d7;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+
+.profile img{
+    width: 200px; /* Adjusted width */
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.details{
+    margin-top: 2%;
+    line-height: 2; /* Adjust line height for h1 */
+    margin-bottom: -3%;
+}
+
+.page-details h4{
+    margin-top: 5%;
+}
+
+.page-details{
+    margin-top: 3%;
+    line-height: 40%; /* Adjust line height for h1 */
+}
+
+.page-details p{
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+.page-details a{
+    color: rgba(38, 15, 138, 0.904);
+    text-decoration: none;
+}
+
+.page-details a:hover {
+    border-bottom: solid 2px; /* This adds underline on hover */
+}
+
+h4{
+    margin-top: 3%;
+}
+
+
+.scroll-image img {
+    width:75px; 
+    position: fixed;
+    bottom: 10px;
+    left: 08px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}

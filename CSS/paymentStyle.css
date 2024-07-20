@@ -1,0 +1,147 @@
+/* Applying Poppins font and setting initial styles for body */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #c9cacf42, #c9cacf42);
+}
+
+/* Overriding body font family */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the container */
+.Educontainer {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Setting up the row and column layout */
+.Edurow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Educol {
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* Styling titles */
+.Edutitle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Styling input boxes */
+.EduinputBox {
+    margin-bottom: 20px;
+}
+
+.EduinputBox label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.EduinputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.EduinputBox input:focus {
+    outline: none;
+    border-color: #04AA6D;
+}
+
+/* Setting up flex display for elements */
+.Eduflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for images within input boxes */
+.EduinputBox img {
+    height: 2.3rem;
+}
+
+/* Additional styling for shipping information and paragraphs */
+.Edushipping, p {
+    color: #666;
+}
+
+/* Styling for submit button */
+#submit-btn {
+    background-color: #a6c3ce;
+    color: black;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #f0f0f01a;
+}
+
+/* Adjustments for flex elements within a container */
+.Eduflex .EduinputBox {
+    margin-right: 10px;
+}
+
+/* Styling for invalid inputs */
+.EduinputBox input:invalid {
+    border-color: red;
+    background-color: #ffeeee;
+}
+
+.EduinputBox input:focus:invalid {
+    outline: none;
+}
+
+.Eduboxsize {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Edubtn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Edubtn:hover {
+    background-color: var(--light-color);
+}
+/* Confirmation message content */
+.Educonfirmation-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}

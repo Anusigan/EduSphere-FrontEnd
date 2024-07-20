@@ -1,0 +1,84 @@
+body {
+    min-height: 100vh;
+    background-image: url('../Pictures/content_page/content_page_background_student4.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:scroll; /* Ensure the background stays fixed when scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.fcontent{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #dbd6d6ec; /* Solid background color for the form container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+    border-radius: 8px; 
+}
+
+.c-img {
+    width: 40%;
+    display: block; /* Ensures the image behaves like a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+.Content p {
+    text-align: justify;
+    line-height: 200%;
+}
+
+.scroll-image img {
+    width:75px; 
+    position: fixed;
+    bottom: 10px;
+    left: 08px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+.con_box{
+    text-align: center;
+}
+.con {
+    padding: 0;
+}
+
+.con li {
+    margin: -17px; /* Adjust the margin to decrease space between items */
+    
+}
+
+.con a {
+    color: rgb(15, 6, 77);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.con a:hover {
+    border-bottom: solid 2px;
+}
+
+h4[c1] {
+    scroll-margin-top: 100px; /* Adjust this value to ensure heading is fully visible */
+    margin-top: -80px; /* Counteract the padding to keep layout intact */
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+h4[c1]:target {
+    visibility: visible;
+}

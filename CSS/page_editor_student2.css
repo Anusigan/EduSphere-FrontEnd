@@ -1,0 +1,65 @@
+.container{
+    padding-top: 6%;/* Adds padding to the top of the container */
+    min-height: 100vh;/* Ensures the container takes at least the full viewport height */
+    background-image: url('../Pictures/page_editor/page_editor_background.jpg'); /* Add your background image here */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;/* Prevents the background image from repeating */
+    background-attachment: fixed; /* Ensure the background stays fixed when scrolling */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column;/* Aligns children in a column */
+    width: 100%;/* Sets the width of the container to 100% */
+    height: auto;/* Allows the height to adjust automatically */
+    align-items: center; /* Centers children horizontally */
+}
+
+.content{
+    width: 620px;/* Sets a fixed width for the content */
+    height: auto;/* Allows the height to adjust automatically */
+    background-color: #dbd6d6d7;/* Sets the background color with slight transparency */
+    border-radius: 15px; /* Rounds the corners of the content */
+    text-align: center;/* Centers the text */
+    padding: 20px;/* Adds padding inside the content */
+    margin: 40px; /* Adds margin outside the content */
+}
+
+.profile img{
+    width: 200px; /* Adjusted width of the profile image */
+    border-radius: 50%;/* Makes the profile image circular */
+    margin-top: 30px; /* Adds margin to the top of the image */
+    margin-bottom: 10px;/* Adds margin to the bottom of the image */
+}
+
+.details{
+    margin-top: 2%;/* Adds margin to the top of the details section */
+    line-height: 2;  /* Adjusts line height for better readability */
+    margin-bottom: -5%;/* Adds negative margin to the bottom of the details section */
+}
+
+.page-details h4{
+    margin-top: 5%; /*Adds margin to the top of h4 elements in the page-details section */
+}
+
+.page-details{
+    margin-top: 3%;/* Adds margin to the top of the page-details section */
+    line-height: 40%;  /* Adjusts line height for the section */
+    margin-bottom: 3%; /* Adds margin to the bottom of the section */
+}
+
+.page-details p{
+    margin-top: 0%;/* Removes the margin from the top of paragraph elements */
+    margin-bottom: 5%;/* Adds margin to the bottom of paragraph elements */
+}
+
+.page-details a{
+    color: rgba(38, 15, 138, 0.904); /* Sets the text color for links */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+.page-details a:hover {
+    border-bottom: solid 2px; /* This adds underline on hover */
+}
+
+h4{
+    margin-top: 3%; /* Adds margin to the top of all h4 elements */
+}

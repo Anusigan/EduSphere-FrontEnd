@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Setting the viewport to make the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sitemap</title>
+    
+    <!-- Linking the external CSS stylesheets for gallery footer and header -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/sitemap.css">
+</head>
+
+
+
+<body class="backg">
+<header id="up">
+    <nav id="navbar">
+        <div class="logo">
+            <a href="../HTML/home.html"><img src="../Pictures/common/Logo.png" alt="Logo" class="nav-logo"></a>
+        </div>
+        <ul>
+            <li class = "na"><a href="../HTML/home.html">Home</a></li>
+            <li class = "na"><a href = "../HTML/shop.html">Shop</a></li>
+            <li class = "na"><a href = "../HTML/gallery.html">Gallery</a></li>
+            <li id="active-tab" ><a href = "../HTML/sitemap.html">Site Map</a></li>
+            <li class = "na"><a href = "../HTML/team.html">Team</a></li>
+            <li class = "na"><a href = "../HTML/feedback.html">Feedback</a></li>
+            <li class = "na"><a href = "../HTML/profile.html">User Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<div class="heading">
+    <p id="headingtext"><b> SITE MAP </b></p>
+    <br><br>
+</div>
+
+<!-- Container for the sitemap SVG -->
+<div class="sitemap">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300"  viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
+
+         <!-- Inserting theLinks and labels for each section in the sitemap -->
+        <a href="../HTML/home.html">
+            <circle cx="600" cy="42" r="40"  class="circle"/> <!-- Creating the Circle for Home link -->
+            <text x="600" y="45" text-anchor="middle" class="text" >Home</text> <!-- Inserting the text  label for Home link -->
+        </a>
+
+        
+
+        <a href="../HTML/home.html#blog">
+            <circle cx="100" cy="250" r="40"  class="circle"/>
+            <text x="100" y="250" text-anchor="middle" class="text" >Content</text> <!-- Creating the Circle for Sitemap link -->
+            <text x="100" y="265" text-anchor="middle" class="text" >Page</text> <!-- Inserting the text  label for Sitemap link -->
+        </a>
+
+        <a href="../HTML/profile.html">
+            <circle cx="300" cy="250" r="40"  class="circle"/>
+            <text x="300" y="250" text-anchor="middle" class="text">User</text><!-- Creating the Circle for user profile link -->
+            <text x="300" y="265" text-anchor="middle" class="text">Profile</text> <!-- Inserting the text  label for Sitemap link -->
+        </a>
+
+        <a href="../HTML/feedback.html">
+            <circle cx="500" cy="250" r="40"  class="circle"/>
+            <text x="500" y="250" text-anchor="middle" class="text">Feed</text>
+            <text x="500" y="265" text-anchor="middle" class="text">back</text>
+        </a>
+
+        <a href="../HTML/shop.html">
+            <circle cx="700" cy="250" r="40" class="circle"/>
+            <text x="700" y="255" text-anchor="middle" class="text" >Shop</text>
+        </a>
+
+        <a href="../HTML/team.html">
+            <circle cx="900" cy="250" r="40" class="circle"/>
+            <text x="900" y="250" text-anchor="middle" class="text">Team</text>
+        </a>
+
+        <a href="../HTML/gallery.html">
+            <circle cx="1100" cy="250" r="40"  class="circle"/>
+            <text x="1100" y="255" text-anchor="middle" class="text">Gallery</text>
+        </a>
+
+
+
+        
+
+
+        <!-- Connecting links to connect the circles in the sitemap -->
+        <line x1="600" y1="81" x2="600" y2="130" class="link"/>
+        <line x1="98" y1="130" x2="1102" y2="130" class="link"/>
+        <line x1="100" y1="130" x2="100" y2="210" class="link"/>
+        <line x1="300" y1="130" x2="300" y2="210" class="link"/>
+        <line x1="500" y1="130" x2="500" y2="210" class="link"/>
+        <line x1="700" y1="130" x2="700" y2="210" class="link"/>
+        <line x1="900" y1="130" x2="900" y2="210" class="link"/>
+        <line x1="1100" y1="130" x2="1100" y2="210" class="link"/>
+
+    </svg>
+</div>
+
+<div class="scroll-image">
+    <a href="#up"><img src="../Pictures/content_page/content_page_uparrow.png"  alt="up-arrow"></a>
+</div>
+
+</main>
+
+
+<footer>
+    <div>
+        <ul class="social">
+            <li><a href="https://www.youtube.com"><img src="../Pictures/common/Youtube.png" alt="youtube" width="50" ></a></li>
+            <li><a href="https://www.facebook.com"><img src="../Pictures/common/Facebook.png" alt="facebook" width="50"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="../Pictures/common/Instagram.png" alt="instagram" width="50"></a></li>
+        </ul>
+        <p class="dev">&copy; 2024 EduSphere. All Rights Reserved. | Designed and Developed by <a href = "../HTML/page_editor_student4.html" class ="pd">Anusigan Sivananthan.</a></p>   
+    </div>
+    <div class="other-container">
+        <ul class="other">
+            <li><a href="../HTML/home.html">Home</a> |</li>
+            <li><a href="../HTML/shop.html">Shop</a> |</li>
+            <li><a href="../HTML/gallery.html">Gallery</a> |</li>
+            <li><a href="../HTML/team.html">Team</a> |</li>
+            <li><a href="../HTML/feedback.html">Feedback</a> |</li>
+            <li><a href="../HTML/profile.html">User Profile</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

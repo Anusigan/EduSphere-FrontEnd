@@ -1,0 +1,153 @@
+@import "fonts.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font-navbar);
+    overflow: hidden;
+    position: relative;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+#Edusplash-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    width: 1000px;
+    column-gap: 20px;
+    z-index: 100;
+    animation: fadeIn 3s ease-in-out forwards;
+    opacity: 0;
+}
+
+#Edusplash-wrapper.loaded {
+    opacity: 1;
+}
+
+#Edulogo-wrapper {
+    animation: logoAnimation 2s ease-in-out forwards;
+}
+
+#Edulogo {
+    width: 350px;
+}
+
+#Edumission-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-size: 23px;
+    color: #eee;
+    animation: textAnimation 2s 1s forwards;
+    opacity: 0;
+}
+
+#Edumission {
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 10px;
+}
+
+#Edustudent-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    color: #eee;
+    animation: textAnimation 2s 2s forwards;
+    opacity: 0;
+}
+
+.Edustudents {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+
+
+.Edustudent-line {
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+}
+
+#Eduloading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+#Eduloading-wrapper h1 {
+    color: #eee;
+    margin-top: 15px;
+}
+
+#Eduloading {
+    width: 100px;
+    animation: rotate 2s linear infinite;
+}
+
+.Eduline {
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logoAnimation {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes textAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
